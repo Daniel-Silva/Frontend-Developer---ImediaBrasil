@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Unidade 4 - Meta refresh</title>
+        <meta charset="utf-8"><!-- Essa meta define a configuração de caracteres que vamos trabalhar -->
+        <meta name="author" content="Daniel Silva"><!-- Essa meta define o autor da página -->
+        <meta name="generator" content="Dreamweaver CC"><!-- Essa meta define o software que criou essa página -->
+        <meta name="keywords" content="Daniel Silva Web Developer, Freelancer, Desenvolvedor Front End, Programador, Web Design, Design"><!-- Essa meta define palavras chaves para serem encontradas na página -->
+        <meta name="description" content="Web Developer"><!-- Essa meta define a descrição da página -->
+        <meta name="application-name" content="Daniel Silva">
+        <meta http-equiv="refresh" content="3"><!-- Essa meta realiza um refresh de tempo em tempo na página --> 
+        
+        <script>
+            function SorteioNumero(){
+                sorteio.innerHTML = Math.round(Math.random() * 50);
+            }
+            window.onload = SorteioNumero;
+        
+        </script>
+    </head>
+    <body>
+        <p id="sorteio"></p>
+    </body>
+</html>

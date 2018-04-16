@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title> 
+    </head>
+
+    <body>
+    	<nav>
+        	<a href="#">Brasil</a>
+            <a href="#">Argentina</a>
+            <a href="#">Uruguai</a>
+            <a href="#">Chile</a>
+        </nav>
+        
+		<!-- scripts -->
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>    
+        	$( function() {
+				console.log('Está página contém '+ $('a').length +' links');
+                
+                $('a').css('color', '#000').css('text-decoration', 'none');
+                
+                $('a:odd').css('background-color', '#7A95B2');
+			})
+        </script>   
+                
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$( function(e) {
+                $('a').attr('target', ('_blanck'));
+                $('a').attr('title', 'Alpes Suiços');
+                $('a').removeAttr('title');
+                
+                $('img').attr({src:"imagem/foto2.jpg"});
+			} )
+		</script>
+        
+    </head>
+
+    <body>
+    	
+    	<a href="imagem/foto6_grande.jpg"><img src="imagem/foto6.jpg"></a>
+
+    </body>
+
+</html>

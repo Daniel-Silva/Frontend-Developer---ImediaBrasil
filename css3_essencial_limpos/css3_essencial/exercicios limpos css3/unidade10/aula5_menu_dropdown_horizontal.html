@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="ISO-8859-2">
+<title>Curso de CSS - Menu com submenu</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	margin:0;padding:0;
+}
+
+#menu {
+    width: 600px;
+	margin: 0 auto;
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style:none;	
+}
+
+#menu ul li {
+	float: left;
+    position: relative;
+}
+
+/* Menu horizontal principal */
+#menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 8px;
+    margin-left: 1px;
+	background-color: #607D8B;
+    
+}
+
+/* Submenu */
+#menu ul li ul {
+    display: none;
+    position: absolute;
+    
+}
+    
+.sub_brasil, .sub_portugal, .sub_angola, .sub_mocambique, .sub_caboverde {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+       -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Itens do submenu */
+#menu ul li ul li a {
+    background-color: #fff;
+    color: #607D8B;
+    margin-bottom: 0px;
+}
+
+#menu ul li ul li a:hover  {
+    background-color: #E0E0E0;
+}
+
+/* PULO DO GATO!!  Faz aparecer o menu */
+#menu li:hover ul {
+	display: block;
+}
+
+/* Alterar a cor de background dos itens do menu */
+#menu ul li a:hover {
+	
+}
+
+</style>
+
+
+<body>
+
+	<nav id="menu">
+        <ul> 
+        
+            <li><a href="#">Brasil</a> 
+                    <ul class="sub_brasil"> 
+                        <li><a href="#">Recife</a></li> 
+                        <li><a href="#">Sao Paulo</a></li>                         
+                        <li><a href="#">Rio de Janeiro</a></li> 
+                        <li><a href="#">Belo Horizonte</a></li> 
+                        <li><a href="#">Curitiba</a></li> 
+                    </ul> 
+            </li>
+            
+            <li><a href="#">Portugal</a> 
+                    <ul class="sub_portugal"> 
+                        <li><a href="#">Lisboa</a></li> 
+                        <li><a href="#">Porto</a></li> 
+                        <li><a href="#">Braga</a></li> 
+                    </ul> 
+        	</li> 
+        	
+            <li><a href="#">Angola</a> 
+                    <ul class="sub_angola"> 
+                        <li><a href="#">Luanda</a></li> 
+                        <li><a href="#">Benguela</a></li> 
+                        <li><a href="#">Namibe</a></li> 
+                        <li><a href="#">Menongue</a></li> 
+                        <li><a href="#">Soyo</a></li> 
+                    </ul> 
+        	</li>
+        	
+            <li><a href="#">Moçambique</a>         
+                    <ul class="sub_mocambique"> 
+                        <li><a href="#">Mamuto</a></li> 
+                        <li><a href="#">Matola</a></li> 
+                        <li><a href="#">Beira</a></li> 
+                        <li><a href="#">Nampula</a></li> 
+                    </ul> 
+        	</li> 
+            
+            <li><a href="#">Cabo Verde</a>         
+                    <ul class="sub_caboverde"> 
+                        <li><a href="#">Praia</a></li> 
+                        <li><a href="#">Mindelo</a></li> 
+                        <li><a href="#">Mosteiros</a></li> 
+
+                    </ul> 
+        	</li>             
+            
+        </ul>
+    </nav>
+
+</body>
+</html>

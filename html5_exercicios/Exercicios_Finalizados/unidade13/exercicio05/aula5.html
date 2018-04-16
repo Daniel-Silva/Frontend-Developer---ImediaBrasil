@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Unidade 13 - Adicionar um placeholder e um autofocus</title>
+        <meta charset="utf-8">
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="destino.html" method="post">
+            <input type="text" name="Nome" id="nome" maxlength="100" placeholder="Nome" autofocus> <!-- maxlength indica o máximo de caractéres no campo --> 
+            
+           <input type="tel" name="Telefone" id="telefone" required placeholder="Telefone"><!-- required indica que este campo é obrigatório -->          
+	        <input type="email" name="Email" id="email" placeholder="Email"><!-- placeholder indica dentro do campo uma informação -->            
+            <input type="url" name="website" id="website" placeholder="Website">
+            
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+        </form>
+    
+    </body>
+</html>

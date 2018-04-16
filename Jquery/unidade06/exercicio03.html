@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title>
+        
+        <style>
+			#janela { border:1px solid #666; width:200px; height:200px; margin-top:10px }
+		</style>
+            
+    </head>
+    
+    
+
+    <body>
+    	<input type="submit" id="botaoazul" 	value="azul">
+        <input type="submit" id="botaovermelho" value="vermelho">
+        <input type="submit" id="botaoverde" 	value="verde">
+        
+        <div id="janela"></div>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+            
+            function params (e){
+                $cor = e.data.cor;
+                $largura = e.data.largura;
+                
+                $('#janela')
+                    .css({
+                        'background-color': $cor,
+                        'width': $largura,
+                    })
+            };
+
+            
+            $(function(e){
+                $('#botaoazul').bind('click', {cor: 'blue', largura: '372px'}, params);
+                $('#botaovermelho').bind('click', {cor: 'red'}, params);
+                $('#botaoverde').bind('click', {cor: 'green'}, params);
+            })
+	 	</script>
+    </body>
+</html>

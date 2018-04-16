@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <title>Uniodade 5 - Aula 3</title>
+        
+        <!--=== Google WebFonts ===-->
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />
+        
+        <style type="text/css">
+		
+        	#gradient_standard {
+				position:absolute;left:100px;top:100px;
+				width:150px;
+				height:150px;
+				background:linear-gradient(top, #06C 0%, #9C6 100%);
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_webkit {
+				position:absolute;left:100px;top:260px;
+				width:150px;
+				height:150px;
+				background:-webkit-linear-gradient(top, #06C 0%, #9C6 50%);
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_webkit_alternativo {
+				position:absolute;left:100px;top:420px;
+				width:150px;
+				height:150px;
+				background:-webkit-gradient(linear, left top, right bottom, from(#06C), to(#9C6));
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_firefox {
+				position:absolute;left:100px;top:580px;
+				width:150px;
+				height:150px;
+				background:-moz-linear-gradient(left, #06C, #9C6);
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_ie {
+				position:absolute;left:100px;top:740px;
+				width:150px;
+				height:150px;
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr= #0066CC,endColorstr=#99CC66,GradientType=0);
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_radial_webkit {
+				position:absolute;left:100px;top:900px;
+				width:150px;
+				height:150px;
+				background: -webkit-radial-gradient(150px 50px, farthest-side, #1a82f7, #2F2727);
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_radial_firefox {
+				position:absolute;left:100px;top:1060px;
+				width:150px;
+				height:150px;
+				background:-moz-radial-gradient( 50px 50px,farthest-corner, #1a82f7, #2F2727 );
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_radial_ie {
+				position:absolute;left:100px;top:1220px;
+				width:150px;
+				height:150px;
+				background-image: -ms-radial-gradient(center bottom, circle farthest-side, #1A82F7 0%, #2F2727 100%);
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			#gradient_radial_ie_2 {
+				position:absolute;left:100px;top:1380px;
+				width:150px;
+				height:150px;
+				background-image: -ms-radial-gradient(center bottom, circle farthest-corner, #1A82F7 0%, #2F2727 100%);
+				border:1px solid #000;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	
+			}
+			
+			
+
+						        
+        </style>    
+    </head>
+    
+    <body>
+    
+		 <div id="gradient_standard"></div>
+         <div id="gradient_webkit"></div>
+         <div id="gradient_webkit_alternativo"></div>
+         <div id="gradient_firefox"></div>
+         <div id="gradient_ie"></div>
+         <div id="gradient_radial_webkit"></div>
+         <div id="gradient_radial_firefox"></div>
+         <div id="gradient_radial_ie"></div>
+         <div id="gradient_radial_ie_2"></div>
+    
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title> 
+        
+        <style>
+        
+            div {
+                width: 300px;
+                height: 200px;
+                background-color: #69A5D2;
+                border: 1px solid #000;
+            }
+        
+        </style>
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        
+        <script>
+			$(function(e) {
+				$('li:last').replaceWith('<p>Fui Trocado de H1 para P</p>');
+                
+                $('ul').wrapAll('<div></div>');
+                $('ul').wrapInner("<div>Outra Div</div>");
+                
+			})
+		</script>        
+    </head>
+
+    <body>
+    	
+      
+		<ul>
+        		
+            <li>Curso HTML5 Essencial</li>
+            <li>Curso CSS3 Essencial</li>
+            <li>Curso Javascript Essencial</li>
+            <li>Curso jQuery Essencial</li>
+        </ul>
+        
+    </body>
+
+</html>

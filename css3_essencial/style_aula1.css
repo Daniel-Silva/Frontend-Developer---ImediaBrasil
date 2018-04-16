@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+.border {
+	width:400px;
+	height:400px;
+	border:rgba(167,1,4,1.00) 5px solid;
+	float:left;
+	margin-bottom:10px;	
+}
+
+.border_dois {
+	width:400px;
+	height:400px;
+	border:rgba(167,1,4,1.00) solid;
+	border-width: 8px 15px 3px 20px;
+	border-radius: 8px;
+	float:right;	
+}
+
+#sombra {
+	width:450px;
+	height:300px;
+	background-color:rgba(103,103,103,1.00);
+	border-radius: 5px 80px 5px 80px;
+	padding: 5px;
+	margin-top:30px;
+	clear:both;
+}
+
+#principal {
+	width:400px;
+	height:250px;
+	background-color:#fff;
+	position:relative;
+	border-radius: 5px 80px 5px 80px;
+	margin-left:5px;
+	margin-top:5px;	
+}

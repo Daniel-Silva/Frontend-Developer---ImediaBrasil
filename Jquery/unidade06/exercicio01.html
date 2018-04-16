@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title>
+              
+    </head>
+
+    <body>
+        <input type="button" id="cursohtml" value="Curso HTML5" />
+        <input type="button" id="cursocss" 	value="Curso CSS3" />
+        
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$(function(e){
+                $('#cursohtml').click(function(){
+                    console.log('Curso de HTML5');
+                })
+                
+                function msgConsole (msg){
+                    msg = 'Curso de CSS3 - Essencial'
+                    console.log(msg);
+                }
+                
+                $('#cursocss').bind("click", msgConsole)
+            })		
+		</script>  
+        
+    </body>
+
+</html>

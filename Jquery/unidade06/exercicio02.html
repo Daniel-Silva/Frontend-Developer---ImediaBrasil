@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title>
+        <style>
+			#janela { width:300px; height:300px; background-color:#069; margin-top:20px }
+		</style>
+        
+                
+    </head>
+
+    <body>
+        <input type="button" id="mostrar" 	value="Mostrar" />
+        <input type="button" id="esconder" 	value="Esconder" />
+        <input type="button" id="hover" 	value="Hover" />
+        
+        <div id="janela"></div>
+        
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>
+			$(function(){
+                $('#esconder')
+                    .click(hideObject);
+                $('#mostrar')
+                    .click(showObject);
+                $('#hover')
+                    .hover(hideObject, showObject);
+            })
+            
+            function hideObject (){
+                $('#janela').fadeOut();
+            }
+            
+            function showObject (){
+                $('#janela').fadeIn();
+            }
+		</script>
+    </body>
+
+</html>

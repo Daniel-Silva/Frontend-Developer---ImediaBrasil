@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title>
+		<style>
+			body { margin:0; padding:0; }
+            nav {
+				position:fixed;
+				width:78px;
+				padding:1px;
+				top:10px;
+				left:10px;
+				box-shadow:0 0 5px #000;
+				background-color:#000;
+				z-index:3;	
+			}
+			
+			nav ul { margin:0; padding:0; list-style:none }
+			nav li { 
+				list-style-type:none; width:78px; height:78px;
+			 	background-repeat:no-repeat; margin-bottom:1px;
+				cursor:pointer;
+			}
+			
+			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
+			nav li:nth-child(2) { background-image:url(imagem/basquete.png) } 
+			nav li:nth-child(3) { background-image:url(imagem/tenis.png) } 
+			
+            #primeiro, #segundo, #terceiro {
+                width: 100%;
+                height: 780px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                background-attachment: fixed;
+            }
+            
+            #primeiro {background-color: #9FBFA7;}
+            #segundo {background-color: #F34A53;}
+            #terceiro {background-color: #5D6B74;}
+					
+        </style>
+          
+    </head>
+    <body>
+		<nav>
+        	<ul>
+            	<li id="tela1"></li>
+            	<li id="tela2"></li>
+            	<li id="tela3"></li>
+            </ul>
+        </nav>
+        <div id="primeiro"></div>
+        <div id="segundo"></div>
+        <div id="terceiro"></div>
+        
+        
+        <script src="jquery-3.2.1.min.js"></script>
+        <script>		
+			$( function(e) { 	
+                
+                $(window).resize(function(){
+                    (function(){
+                        var documentHeight = $(window).height();
+                        $('#primeiro').css('height', documentHeight);
+                        $('#segundo').css('height', documentHeight);
+                        $('#terceiro').css('height', documentHeight);
+                    })()
+                })
+                
+                
+                $('nav li:first-child')
+                    .click(function(){
+                        $('html, body')
+                            .animate( 
+                                {scrollTop: $('#primeiro').offset().top
+                            }, 1000);
+                    })
+                
+                $('nav li:nth-child(2)')
+                    .click(function(){
+                        $('html, body')
+                            .animate( 
+                                {scrollTop: $('#segundo').offset().top
+                            }, 1000);
+                    })
+                
+                $('nav li:nth-child(3)')
+                    .click(function(){
+                        $('html, body')
+                            .animate( 
+                                {scrollTop: $('#terceiro').offset().top
+                            }, 1000);
+                    })
+
+			});			
+		</script>  
+    </body>
+</html>

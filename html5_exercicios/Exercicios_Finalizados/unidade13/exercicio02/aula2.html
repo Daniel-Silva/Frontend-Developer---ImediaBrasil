@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Unidade 13 - Criação de um formulário simples</title>
+        <meta charset="utf-8">
+        
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        
+        <h2>Formulário</h2>
+        <form action="destino.html" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="Nome" id="nome" maxlength="100"> <!-- maxlength indica o máximo de caractéres no campo --> 
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="Telefone" id="telefone">
+            
+            <label for="email">E-mail:</label>
+            <input type="text" name="Email" id="email">
+            
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+        </form>
+    
+    </body>
+</html>

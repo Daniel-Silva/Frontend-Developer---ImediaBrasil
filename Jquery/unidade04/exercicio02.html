@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Essencial</title>
+        
+        <script src="jquery-1.10.1.min.js"></script>
+        <script>
+			$( function(e) {
+                console.log($('#listacursos').html())
+                
+                var meuTitulo = $("<h1>Formação Padrões Web</h1>");
+                $("h1").html(meuTitulo.html());
+                
+                $('ul').append('<li></li>');
+                
+                $('li:last').text('JQuery Dicas e Truques');
+                
+                console.log($('#listacursos').html());
+			} )
+		</script>
+        
+    </head>
+
+    <body>
+    	<h1></h1>
+    
+		<ul id="listacursos">
+            <li>Curso HTML5 Essencial</li>
+            <li>Curso CSS3 Essencial</li>
+            <li>Curso Javascript Essencial</li>
+            <li>Curso jQuery Essencial</li>
+        </ul>
+
+    </body>
+
+</html>
